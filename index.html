@@ -161,45 +161,27 @@
       <section id="dataset" class="about-section">
          <div class="container">
             <div class="row">
-               <div class="col-lg-10 mx-auto">
+               <div class="col-lg-15 mx-auto">
 
 <!--                   <br><br>-->
 <!--                  <h2>Abstract</h2>-->
-<!--                  <p class="lead text-justify">-->
-<!--                     Understanding social interactions from egocentric views is crucial for many applications, ranging from assistive robotics to AR/VR.-->
-<!--                      Key to reasoning about interactions is to understand the body pose and shape of the interaction partner from the egocentric view.-->
-<!--                      However, research in this area is severely hindered by the lack of datasets. Existing datasets are limited in terms of either size,-->
-<!--                      capture/annotation modalities, ground-truth quality, or interaction diversity. We fill this gap by proposing EgoBody, a novel large-scale dataset for human pose,-->
-<!--                      shape and motion estimation from egocentric views, during interactions in complex 3D scenes. We employ Microsoft HoloLens2 headsets to record rich-->
-<!--                      egocentric data streams (including RGB, depth, eye gaze, head and hand tracking).-->
-<!--                      To obtain accurate 3D ground truth, we calibrate the headset with a multi-Kinect rig and fit expressive SMPL-X body meshes to multi-view RGB-D frames,-->
-<!--                      reconstructing 3D human shapes and poses relative to the scene, over time.We collect 125 sequences, spanning diverse interaction scenarios,-->
-<!--                      and propose the first benchmark for 3D full-body pose and shape estimation of the social partner from egocentric views.-->
-<!--                      We extensively evaluate state-of-the-art methods, highlight their limitations in the egocentric scenario,-->
-<!--                      and address such limitations leveraging our high-quality annotations.-->
-<!--                  </p>-->
 
 
                    <h2>Dataset Overview</h2>
                    <div class="text-center">
+                     <p class="lead text-justify">
+                        For a more real-world CDD benchmark, we suggest enforcing high heterogeneity over the deepfake data stream.
+                        In particular, we construct a new collection of deepfakes from remarkably diverse resources:
+                      </p>
                      <!-- <p><img class="img-fluid" alt="teaser" src="https://via.placeholder.com/1500x600"></p> -->
-                     <p><img class="img-fluid" alt="teaser" src="images/teaser_v2.jpg"></p>
+                     <p><img class="img-fluid" alt="teaser" src="images/CDDB_table.png"></p>
                        <p class="lead text-justify">
 <!--                           <b>Dataset Overview</b>. -->
-                           EgoBody is a large-scale dataset capturing ground-truth 3D human motions during social interactions in 3D scenes.
-                           Given two interacting subjects, we leverage a lightweight multi-camera rig to reconstruct their
-                           3D shape and pose over time (1st and 2nd rows). One of the subjects (<font color="#6495ED">blue</font>) wears a head-mounted device,
-                           synchronized with the rig, capturing egocentric multi-modal data like eye gaze tracking (<font color="#FF5733">red</font> circles in the 3rd row)
-                           and RGB images (bottom). EgoBody dataset contains:
+                           We collected the benchmark dataset from pervious opensource deepfake datasets:
                            <br><br>
-                           &ensp;&#8226; 125 sequences <br>
-                           &ensp;&#8226; 36 subjects <br>
-                           &ensp;&#8226; 15 indoor 3D scenes <br>
-                           &ensp;&#8226; 219731 synchronized multi-view third-person view RGBD frames from 3-5 Azure Kinects <br>
-                           &ensp;&#8226; 199111 egocentric view RGB frames from HoloLens2, synchronized with Kinect frames <br>
-                           &ensp;&#8226; Eye gaze, hand/head tracking, and depth from HoloLens2 <br>
-                           &ensp;&#8226; SMPL-X/SMPL annotations for 3D body pose, shape and motion annotations for both the interactee and the camera wearer<br>
-
+                           &ensp;&#8226; ProGAN,StyleGAN, BigGAN, CycleGAN, GauGAN, CRN,IMLE, SAN, FaceForensics++ ,WhichFaceReal from <br> <a href="https://scholar.google.com/citations?hl=en&user=oPGWc44AAAAJ">CNNDetection</a>
+                           &ensp;&#8226; GLOW, StarGAN from <br>
+                           &ensp;&#8226; WildDeepfake from <br>
                   </p>
                   </div>
 
@@ -306,7 +288,7 @@
       <section id="citation" class="">
          <div class="container">
             <div class="row">
-               <div class="col-lg-10 mx-auto">
+               <div class="col-lg-15 mx-auto">
                   <h2 class="section-title-tc">Citation</h2>
                   <br>
                   <a class="publink" target="_blank" href="https://arxiv.org/pdf/2112.07642.pdf"><b>
