@@ -177,7 +177,7 @@
                    <div class="text-center">
                      <p class="lead text-justify">
                         For a more real-world CDD benchmark, we suggest enforcing high heterogeneity over the deepfake data stream.
-                        In particular, we construct a new collection of deepfakes from remarkably diverse resources:
+                        In particular, we construct a new collection of deepfakes from remarkably diverse resources(11 deepfake models):
                       </p>
                      <!-- <p><img class="img-fluid" alt="teaser" src="https://via.placeholder.com/1500x600"></p> -->
                      <p><img class="img-fluid" alt="teaser" src="images/CDDB_table.png" width="60%" height="auto" ></p>
@@ -222,6 +222,90 @@
          </div>
       </section>
 
+
+      <hr class="hr-fade-content" data-content="✨">
+
+      <section id="benchmark" class="">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-15 mx-auto">
+
+<!--                   <br><br>-->
+<!--                  <h2>Abstract</h2>-->
+
+
+                   <h2>Dynamic Setup</h2>
+                   <div class="text-center">
+                     <p class="lead text-justify">
+                        Intead of deepfake detection scenario, we are interested in a dynamic (continual) setting: 
+                        a stream of likely heterogeneous deepfakes appear time by time rather than at once, 
+                        and the early appeared deepfakes cannot be fully accessed.
+                      </p>
+                     <p><img class="img-fluid" alt="teaser" src="images/cdd.png" width="60%" height="auto" ></p>
+                  </div>
+
+                  <h2>Evaluation Scenarios</h2>
+                  <div class="text-center">
+                    <p class="lead text-justify">
+                     we suggest 3 evaluation scenarios: an easy task sequence (EASY), a hard task sequence (HARD), and a long task sequence (LONG):
+                     <br><br>
+                     &ensp;&#8226; EASY: { GauGAN, BigGAN, CycleGAN, IMLE, FaceForensic++, CRN, WildDeepfake }<br>
+                     &ensp;&#8226; HARD: { GauGAN, BigGAN, WildDeepfake, WhichFaceReal, SAN }<br>
+                     &ensp;&#8226; LONG: { GauGAN, BigGAN, CycleGAN, IMLE, FaceForensic++, CRN, WildDeepfake, Glow, StarGAN, StyleGAN, WhichFaceReal, SAN }<br>
+                  </p>
+
+                  <h2>Benchmarking Methods</h2>
+                  <div class="text-center">
+                    <p class="lead text-justify">
+                     we include 7 continual learning methods:
+                     <br><br>
+                     &ensp;&#8226; CNNDetection, ConViT, NSCIL, LRCIL, iCaRL, LUCIR, DyTox <br>
+                  </p>
+
+                 </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <hr class="hr-fade-content" data-content="✨">
+
+      <section id="Results" class="">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-15 mx-auto">
+
+<!--                   <br><br>-->
+<!--                  <h2>Abstract</h2>-->
+
+
+                   <h2>Result Summary</h2>
+                   <div class="text-center">
+                     <p class="lead text-justify">
+                        Left: Radar plot (the bigger covering area the better) on AAs of the evaluated methods for CDDB EASY1500, LONG1500, HARD1500, HARD1000, HARD500. 
+                        Right: Radar plot on AAs, AFs, mAPs and AA-Ms of the evaluated methods for HARD500. HARDm: HARD with memory budget= m, BC/MC/MT: binary-class/multi-class/multi-task learning methods that have the highest AAs/mAPs, 
+                        AA: Average Accuracy (detection), AF: Average Forgetting degree, AA-M: Average Accuracy (recognition), mAP: mean Average Precision, i.e., the mean of areas under the PR curve.
+                      </p>
+                     <p><img class="img-fluid" alt="teaser" src="images/Radar_plot.png" width="60%" height="auto" ></p>
+                  </div>
+
+                  <h2>Most challenging</h2>
+                  <div class="text-center">
+                    <p class="lead text-justify">
+                       The most challenging setup for best performing state-of-the-art method, you are more then welcome to take the challenge:
+                     </p>
+                    <p><img class="img-fluid" alt="teaser" src="images/Dytox_100.png" width="60%" height="auto" ></p>
+                 </div>
+                  <!-- To DO: add a running table  -->
+                 </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+  
       <!-- <hr class="hr-fade-content" data-content="&#129445"> -->
 
       <!-- <section id="dataset" class="">
@@ -334,7 +418,7 @@
                                </tr>
 
                                <tr>
-                                   <td> <a href="https://scholar.google.com/citations?hl=en&user=oPGWc44AAAAJ">Chuqiao Li</a> </td>
+                                   <td> <a href="https://Coral79.github.io/">Chuqiao Li</a> </td>
                                    <td> <a href="https://zhiwu-huang.github.io/">Zhiwu Huang</a> </td>
                                    <td> <a href="http://people.ee.ethz.ch/~paudeld/">Danda Pani Paudel</a> </td>
                                    <td> <a href="https://scholar.google.com/citations?user=DSMOnTIAAAAJ&hl=zh-CN">Yabin Wang</a> </td>
@@ -350,16 +434,16 @@
             </div>
       </section>
 
-      <!-- <section id="contact" class="">
+      <section id="contact" class="">
          <div class="container">
             <div class="row">
                <div class="col-lg-10 mx-auto">
 	                <h2>Contact</h2>
-		            <br>For questions, please contact Siwei Zhang:<br><a href="mailto:siwei.zhang@inf.ethz.ch">siwei.zhang@inf.ethz.ch</a>
+		            <br>For questions, please contact Zhiwu Huang:<br><a href="mailto:zzhiwu.huang@gmail.com">Email</a>
                </div>
             </div>
          </div>
-      </section> -->
+      </section>
 
 
 
